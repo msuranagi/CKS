@@ -1,0 +1,29 @@
+CNCF-CKS
+
+##To create a Role:- 
+kubectl create role developer --namespace=default --verb=list,create,delete --resource=pods
+
+##To create a RoleBinding:- 
+kubectl create rolebinding dev-user-binding --namespace=default --role=developer --user=dev-user
+
+##To list the resources which are scoped at namespace level and cluster level
+kubectl api-resources --namespaced=true  // resources scoped at namespace level
+kubectl api-resources --namespaced=false // resources scoped at cluster level
+
+##You can run kubectl on any port
+kubectl proxy - Opens proxy port to API server
+kubectl port-forward - Opens port to target deployment pods
+
+kubectl proxy & // this will by default enable kubectl proxy on 8001.
+
+if you want to enable kubectl proxy on any other node, then use below command
+
+kubectl proxy --port 8002 &
+
+## To portfoward on pod, deployment, service. replicaset. [ 8005 is the localhost port, 80 is the internl port of pod/service]
+
+kubectl port-forward pods/{POD_NAME} 8005:80 &
+kubectl port-forward deployment/{DEPLOYMENT_NAME} 8005:80 &
+kubectl port-forward service/{SERVICE_NAME} 8005:80 &
+kubectl port-forward replicaset/{REPLICASET_NAME} 8005:80 &
+

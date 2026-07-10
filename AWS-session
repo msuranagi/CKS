@@ -1,0 +1,56 @@
+https://shorturl.at/c72mN
+
+PortalX: A digital platform that enables users view top 5 resource consuming applications in the local machine.
+1. Real time dashboard to monitor the CPU, Memory, storage with application 
+2. An interface to select the application name and shut it down gracefully
+
+
+
+
+
+
+To Run
+  
+  cd /workshop/ideation-portal
+  npm start
+  
+  Open http://localhost:3000 (http://localhost:3000) — use demo accounts (password: password123):
+  
+  - alice@company.com (Employee)
+  - david@company.com (Panelist)
+  - admin@company.com (Admin)
+
+
+IDC-PasswordOTP
+r&85hz&)l.GI11a8XTmkQl)-m<sOX$7$Ge2Q
+idc
+Identity Center PasswordOTP
+Export
+IDC-Region
+us-east-1
+idc
+Identity Center Region
+Export
+IDC-SSO-StartURL
+https://d-9066742b7a.awsapps.com/start
+idc
+Identity Center start url
+Export
+IDC-UserName
+aidlc
+idc
+Identity Center Username
+Export
+VSCode-Server-Password
+QE1UBhiROu9WAjde
+create-code-server-cft
+VSCode Server Password
+Export
+VSCode-Server-URL
+https://d3uxv4ma4coy3l.cloudfront.net/?folder=/workshop
+create-code-server-cft
+VSCode Server URL
+Export
+
+
+https://catalog.us-east-1.prod.workshops.aws/event/dashboard/en-US
