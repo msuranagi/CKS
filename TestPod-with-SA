@@ -1,0 +1,17 @@
+Deploy a Test pod and assign a SERVICE ACCOUNT
+
+kubectl apply -f - <<EOF
+apiVersion: v1
+kind: Pod
+metadata:
+  name: api-test-pod
+  namespace: default
+spec:
+  containers:
+  - name: api-test
+    image: nginx
+    command: ["sleep"]
+    args: ["infinity"]
+  serviceAccountName: node-viewer-service
+  restartPolicy: Never
+EOF

@@ -1,0 +1,32 @@
+#RuntimeClass
+
+#Gvisor and Kata Containers are two different container runtimes that provide additional security and isolation features compared to traditional container runtimes like Docker or containerd.
+apiVersion: node.k8s.io/v1
+handler: runsc
+kind: RuntimeClass
+metadata:
+  name: gvisor
+
+
+apiVersion: node.k8s.io/v1
+handler: kata-runtime
+kind: RuntimeClass
+metadata:
+  name: kata-containers
+
+
+#Mandating a pod to use a specific RuntimeClass can be done by specifying the runtimeClassName field in the pod spec. This ensures that the pod will run with the desired runtime, providing the necessary isolation and security features.
+
+apiVersion: v1
+kind: Pod
+metadata:
+    name: simple-webapp-1
+    labels:
+        name: simple-webapp
+spec:
+   runtimeClassName: secure-runtime
+   containers:
+     - name: simple-webapp
+       image: kodekloud/webapp-delayed-start
+       ports:
+        - containerPort: 8080

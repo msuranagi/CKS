@@ -27,3 +27,9 @@ kubectl port-forward deployment/{DEPLOYMENT_NAME} 8005:80 &
 kubectl port-forward service/{SERVICE_NAME} 8005:80 &
 kubectl port-forward replicaset/{REPLICASET_NAME} 8005:80 &
 
+kubectl exec app -- curl -s http://<IP>:9999 #exec into a pod and curl an URL
+
+
+kubectl create clusterrole node-viewer --verb=get --verb=list --verb=watch --resource=nodes
+
+kubectl create clusterrolebinding node-viewer-binding --clusterrole=node-viewer --serviceaccount=default:node-viewer-service
