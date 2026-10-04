@@ -1,12 +1,12 @@
 # Kubebench
 
 ## Download Kubebench
-curl -L https://github.com/aquasecurity/kube-bench/releases/download/v0.4.0/kube-bench_0.4.0_linux_amd64.tar.gz -o kube-bench_0.4.0_linux_amd64.tar.gz
-tar -xvf kube-bench_0.4.0_linux_amd64.tar.gz
+curl -L https://github.com/aquasecurity/kube-bench/releases/download/v0.16.0/kube-bench_0.16.0_linux_amd64.tar.gz -o kube-bench_0.16.0_linux_amd64.tar.gz
+tar -xvf kube-bench_0.16.0_linux_amd64.tar.gz
 
 ## How to Run - Run this in Control Plane
 Run kube Bench in control plane
-./kube-bench --config-dir pwd/cfg --config pwd/cfg/config.yaml 
+./kube-bench --config-dir `pwd`/cfg --config `pwd`  /cfg/config.yaml 
 
 ## Example output from kube Bench
 
