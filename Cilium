@@ -1,0 +1,40 @@
+# Reference Docs:
+
+https://docs.cilium.io/en/stable/security/network/encryption/
+
+# Installing Cilium and Enabling Encryption
+Enable encryption by installing Cilium with encryption enabled:
+
+# Add the Cilium Helm repository
+helm repo add cilium https://helm.cilium.io/
+
+# Install Cilium with encryption enabled
+helm install cilium cilium/cilium \
+  --version 1.19.4 \
+  --namespace kube-system \
+  --set encryption.enabled=true \
+  --set encryption.type=wireguard \
+  --set operator.tolerations[0].operator=Exists
+You can verify that Cilium is running and that encryption is enabled by running the following commands:
+
+# Wait for the status of cilium to be OK
+cilium status
+# Check the encryption status of the Cilium installation
+cilium encryption status
+
+===================================================================================
+
+# Login using 
+
+# Deploy the client pod named curlpod:
+
+kubectl run curlpod --image=rapidfort/curl --command -- sleep 3600
+
+kubectl label pod curlpod app=curlpod
+
+sleep 5
+
+kubectl exec -it curlpod -- sh
+
+===================================================================================
+

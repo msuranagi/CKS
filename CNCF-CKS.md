@@ -85,3 +85,7 @@ Add the following to `/etc/kubernetes/manifests/kube-apiserver.yaml`:
 ```yaml
 --insecure-port=0
 ```
+
+### Analysing sbom using grype to generate a vulnerability report
+
+grype sbom:/root/webapp-sbom.json -o json > /root/grype-report.json
