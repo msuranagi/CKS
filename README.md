@@ -7,7 +7,7 @@ The links below are grouped by the topics already covered in the repository. The
 ## Exam approach and general references
 
 - [Strategies for navigating documentation during the exam](CKS-Exam-Strategies.md)
-- [General CKS notes and kubectl references](CNCF-CKS.md)
+- [Kubernetes admin commands and security scanning](Kubernetes-Admin-Commands-and-Scanning.md)
 - [Quick references, admission control, SBOMs, and eBPF](CKS-Quick-References.md)
 - [CKS exam requirements and testing resources](CKS-Exam-Requirements-and-Testing.md)
 

@@ -31,5 +31,3 @@ When copying YAML or configurations from the documentation:
 
 * Always paste into your terminal's text editor (like vim or nano).
 * Use :set paste in Vim before pasting to prevent automatic indentation from breaking the YAML structure.
-
-Would you like a cheatsheet of the most common keywords to search for during the exam, or are you looking for practice scenarios involving Falco and AppArmor?

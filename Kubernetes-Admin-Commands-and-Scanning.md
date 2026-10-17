@@ -1,4 +1,4 @@
-# CNCF CKS Notes
+# Kubernetes Admin Commands and Security Scanning
 
 ---
 
