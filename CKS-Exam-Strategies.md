@@ -1,4 +1,7 @@
-Strategies to efficiently search and navigate the allowed documentation under the pressure of the CKS exam clock:
+# CKS Exam Strategies
+
+Strategies to efficiently search and navigate the allowed documentation under the pressure of the CKS exam clock.
+
 ## 1. Master the Built-In Search bar
 
 * Kubernetes Docs: Use the search bar at kubernetes.io/docs. It uses an internal search engine that ranks official guides very well.
@@ -30,4 +33,3 @@ When copying YAML or configurations from the documentation:
 * Use :set paste in Vim before pasting to prevent automatic indentation from breaking the YAML structure.
 
 Would you like a cheatsheet of the most common keywords to search for during the exam, or are you looking for practice scenarios involving Falco and AppArmor?
-
